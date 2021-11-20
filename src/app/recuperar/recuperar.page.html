@@ -1,0 +1,21 @@
+<ion-content class ="main">
+  <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
+    <ion-card-content>
+      <form [formGroup]="formularioRecuperar" (keyup.enter)="aceptar()">
+      <ion-item>
+        <ion-label stacked class="titulo">Ingresa tu Correo</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input formControlName="correo" type="email" placeholder=ejemplo@gmail.com required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-button [routerLink]="['/mensaje-recuperar']" >Ingresar</ion-button>
+        <ion-buttons slot="start">
+          <ion-button [routerLink]="['/login']">Volver</ion-button>
+        </ion-buttons>
+      </ion-item>
+    </form>
+    </ion-card-content>
+  </div>
+</ion-content>

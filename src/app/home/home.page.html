@@ -1,20 +1,22 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content class="main">
+  <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
+  <ion-card>
+    <ion-card-content>
+      <img src="assets/icon/icono.png"/>
+      <ion-card-subtitle>HOME</ion-card-subtitle>
+      <ion-card-title>Te LLevoApp</ion-card-title>
+  </ion-card-content>
+    <ion-card-content>
+      Este es un proyecto destinado a los alumnos de Duoc. (insertar maps)
+    </ion-card-content>
+    <ion-card-content>
+      <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
+        <ion-buttons slot="start">
+          <ion-button [routerLink]="['/login']">Cerrar Sesion</ion-button>
+        </ion-buttons>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</div>
 </ion-content>
+  
